@@ -21,33 +21,37 @@ Hay 3 archivos de EDA que conforme fui avanzando el mi análisis fui explorando 
 
 Inicié mi análisis exploratorio checando las variables númericas y variables categóricas
 
-![variables númericas](../imagenes/variables_numericas.png)
+![variables númericas](imagenes/variables_numericas.png)
 
 Continué con la variable Categórica
 
-![variable categórica](../imagenes/variables%20categoricas.png)
+![variable categórica](imagenes/variables%20categoricas.png)
 
 Busqué outlayers
-![outlayers](../imagenes/outlayers.png)
+![outlayers](imagenes/outlayers.png)
 
 hice algunos hallazgos...
 # Hallazgos
 La tendencia por acceso tecnológico es Cable-modem y fibra Óptica 
 
-![tendencia por tecnología](../imagenes/tendencia_de_accesos_por_tecnologia.png)
+![tendencia por tecnología](imagenes/tendencia_de_accesos_por_tecnologia.png)
 
 Sin embargo cuando analice por provincia hay un caso que llama mi atención y es la provincia de San Luis en la que predomina la conexión por wireless y al parecer el gobierno provincial de San Luis ha invertido en infraestructura WiFi con el plan San Luis A1000, de acuerdo 
 al siguiente: [artículo](https://agenciasanluis.com/2022/08/31/815248-san-luis-es-la-provincia-mas-digital-del-pais/)
 
-![Caso San Luis](../imagenes/hallazgo_san_Luis.png)
+![Caso San Luis](imagenes/hallazgo_san_Luis.png)
 
-![porcentaje San Luis](../imagenes/hallazgo_san_luis_porcentaje.png)
+![porcentaje San Luis](imagenes/hallazgo_san_luis_porcentaje.png)
 
 Por lo que San Luis aparece en segundo lugar a nivel de uso de tecnología wireless con un 12% de accesos
 
 Conexiones por provincia anualizadas
 
-![vision global](../imagenes/conexiones_por%20años.png)
+![vision global](imagenes/conexiones_por%20años.png)
+
+# Dashboard en Power BI
+
+
 
 
 # Recomendaciones y conclusiones

@@ -7,12 +7,18 @@ Los datos con los cuales se hace el análisis son proporcionados por
 - [ENACOM](https://indicadores.enacom.gob.ar/datos-abiertos) 
 - [población de argentina](https://populationtoday.com/ar-argentina/)
 - [Proveedores de servicios de Internet](dhttps://www.argentina.gob.ar/sites/default/files/isp_por_provincias_2.pdf)
-
+ 
 
 # Desarrollo 
 Para este análisis realicé ETL´s para obtener los datos por hoja del archivo de excel llamado Intenet, asi como otros archivos los cuales son:
 
+- mapa_conectividad.xlsx
+- Portabilidad.xlsx
+- isp_por_provincias_2.pdf
+
 Una vez que obtuve los datos y verifique el tipo de dato, campos nulos y que no hubiera registros duplicados realicé un análisis exploratorio de los datos para entrar en contexto y poder hacer una conexión a la base de datos MySQL para subir los datos.
+
+El archivo ETL.ipynb está en la carpeta src
 
 Ya una vez con la base de datos desarrollé un dashboard para representar un story telling al cuál llegué por medio del EDA.
 
@@ -51,8 +57,43 @@ Conexiones por provincia anualizadas
 
 # Dashboard en Power BI
 
+La fuente de datos de power BI es una base de datos hecha en mySQL
 
+![base de datos](imagenes/bd_mysql.png)
 
+Mediante la herramienta de Power BI realicé un dashboard para Generar un history telling en el cual podemos ver que hay muchas empresas proveedoras del servicio de internet, inicialmente vemos que las empresas son: claro y movistar las que están en el archivo de portabilidad, y al ver los datos notamos que va disminuyendo los clientes asi que nos dimos a la tarea de buscar mayor información y encontramos en datos del gobierno argentino que son 436 empresas registradas como proveedores de servicios de internet ubicadas por provincia.
+
+![Empresas](imagenes/1_empresas.png)
+
+En 2014 la velocidad predominante era 1-6 Mbps con el 80% de conexiones y en 2023 la velocidad predominante es más de 30 Mbps con el 68%.
+
+Las 3 provincias que más conexiones tienen son: Buenos Aires, Capital Federal y Córdoba
+
+![Accesos por velocidad](imagenes/2_accesosporvelocidad.png)
+
+En San Luis y Formosa wireless esta ganando terreno San Luis esta en segundo lugar y Formosa en el lugar 10 a nivel de tecnologia wireless
+
+Podemos ver el top 10 de provincias de acuerdo a la tecnología que más han venido utilizando 
+
+![Accesos por tecnología](imagenes/3_accesosportecnologia.png)
+
+En 2023 los ingresos por accesos a internet han crecido un 64% conrespecto al año anterior, 2022 creció por arriba del 40% asi como 2021.
+
+![Ingresos](imagenes/4_ingresos.png)
+
+En la parte norte del País de Argentina se nota mayor conectividadindependientemente de la tecnología usada.
+Buenos Aires tiene casi el 50% de la población de Argentina
+Tierra del Fuego ocupa el último lugar en población con apenas el 0.34% de población distribuida en la provincia
+
+![Conectividad](imagenes/5_conectividad.png)
+
+y por último nos proponemos objetivos en un idicador de rendimiento de Aumentar en un 2% el acceso a Internet por cada 100 hogares y observamos que en todas las provincias se llega al objetivo.
+
+Tenemos otro KPI que tiene el objetivo de aumentar el acceso a internet independientemente de la tecnologia y vemos que en las provincias estuvieron muy cerca de alcanzar el objetivo.
+
+Propusimos un tercer KPI con el objetivo de aumentar en un 2% el acceso a internet con la velocidad del mas de 30 Mbps ya que observamos que es la velocidad que más esta creciendo.
+
+![KPI´s](imagenes/6_KPI.png)
 
 # Recomendaciones y conclusiones
 

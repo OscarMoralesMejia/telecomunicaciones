@@ -2,12 +2,51 @@
 
 El objetivo de este análisis es proporcionar el panorama a nivel global sobre el acceso a internet ya que simulamos la entrada de una empresa que quiere entrar al mercado Nacional de Argentina por lo cuál debemos de proporcionar la información necesaria para que la empresa tome decisiones de entrar al mercado.
 
+
+## Contenido
+1. [Fuente de datos](#fuente-de-datos)
+2. [Estructura del proyecto](#estructura-del-proyecto)
+3. [Instalación](#instalación)
+4. [Desarrollo](#desarrollo)
+5. [EDA](#eda)
+6. [Hallazgos](#hallazgos)
+7. [Dasboard](#dashboard-en-power-bi)
+8. [Conclusiones](#conclusiones)
+9. [Contacto](#contacto)
+
+
 # Fuente de datos
 Los datos con los cuales se hace el análisis son proporcionados por 
 - [ENACOM](https://indicadores.enacom.gob.ar/datos-abiertos) 
 - [población de argentina](https://populationtoday.com/ar-argentina/)
-- [Proveedores de servicios de Internet](dhttps://www.argentina.gob.ar/sites/default/files/isp_por_provincias_2.pdf)
+- [Proveedores de servicios de Internet](https://www.argentina.gob.ar/sites/default/files/isp_por_provincias_2.pdf)
  
+# Estructura del proyecto
+- `datasetCrudos/`: Contiene los conjuntos de datos utilizados para analizar.
+- `src/`: Contiene el ETL que ocupé para cargar los datos a una base de datos mySQL.
+- `Notebooks/`: Contiene 3 archivos donde realice diferentes análisis exploratorios.
+- `requirements.txt`: Lista de dependencias necesarias para ejecutar el proyecto.
+- `Dashboard/`: Contiene el archivo pbix del dashboard creado
+- `imagenes/`:Contiene imagenes de graficas y resultados del EDA asi como imagenes del dashboard 
+
+## Instalación
+
+1. Clona este repositorio:
+    ```bash
+    git clone https://github.com/OscarMoralesMejia/telecomunicaciones.git
+    cd telecomunicaciones
+    ```
+
+2. Crea un entorno virtual y actívalo:
+    ```bash
+    python -m venv env
+    source env/bin/activate  # En Windows usa `env\Scripts\activate`
+    ```
+
+3. Instala las dependencias:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 # Desarrollo 
 Para este análisis realicé ETL´s para obtener los datos por hoja del archivo de excel llamado Intenet, asi como otros archivos los cuales son:
@@ -95,23 +134,29 @@ Propusimos un tercer KPI con el objetivo de aumentar en un 2% el acceso a intern
 
 ![KPI´s](imagenes/6_KPI.png)
 
-# Recomendaciones y conclusiones
-
-- La velocidad a tomar en cuenta para proporcionar el servicio de Internet podria ser de más 30 Mbps para que la población se sienta atraída 
-
-- El tipo de tecnología que ha venido a la alza es cableModem , fibra óptica 
-
-- La tecnología wireless el gobierno de la provincia de San Luis es quien esta invirtiendo.
-
-- La tecnología ASDL ha venido disminuyendo a lo largo del tiempo.
-
-- En la parte Norte del país existen mayor número de conexiones que en la parte Sur.
-
-- Los Ingresos han venido creciendo en los últimos 3 años con más del 40 % con respecto al año anterior.
-
-- De acuerdo a los datos se puede entrar a proporcionar el servicio a las provincias con mayor población ya que aún se tiene un margen de casi el 50% de mercado en la penetración por hogares.
+# Conclusiones
 
 
+**Velocidad de Internet:** La velocidad mínima recomendada para proporcionar el servicio de Internet debería ser superior a 30 Mbps para atraer a la población.
+
+**Tecnologías en aumento:** Las tecnologías de CableModem y fibra óptica han mostrado un crecimiento significativo en su adopción.
+
+**Inversión en tecnología wireless:** El gobierno de la provincia de San Luis es quien está realizando inversiones en tecnología inalámbrica (wireless).
+
+**Declive de ADSL:** La tecnología ADSL ha experimentado una disminución del 50% en su uso a lo largo del tiempo analizado.
+
+**Distribución geográfica de conexiones:** La región norte del país cuenta con un mayor número de conexiones en comparación con la región sur.
+
+**Consideraciones para inversiones en el sur:** Invertir en la región sur podría requerir una mayor inversión debido a la menor densidad de población.
+
+**Crecimiento de ingresos:** Los ingresos han crecido más del 40% anualmente durante los últimos tres años.
+
+**Oportunidades de mercado:** De acuerdo con los datos, es viable proporcionar servicios de Internet en las provincias con mayor población, ya que aún existe un margen de penetración de mercado cercano al 50%.
+
+
+# Contacto
+
+[Linkedin](linkedin.com/in/oscar-m-7907294b)
 
 
 
